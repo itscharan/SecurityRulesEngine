@@ -66,8 +66,8 @@ TODAY+(number of days) or TODAY-(number of days)
  - Finally run engine to get output(either accepted or rejected)
 
 ### Required libraries:
-1) JUnit4
-2) Apache Joda Time (http://www.joda.org/joda-time/)
+ -  JUnit4
+ -  Apache Joda Time (http://www.joda.org/joda-time/)
 
 #### Future work:
  - RulesStore can be extended to recieve rules from multiple streams like flat files, xml and through http post etc
