@@ -3,7 +3,7 @@
 SRE is a rule engine which accepts or rejects a security data based on a set of rules.
 
 Core features:
-  - RuleStore
+ - RuleStore
  - Security data objects
  - RulesEngine
 
