@@ -1,0 +1,4 @@
+bond nextcoupondate GTHAN TODAY+7 DATE ACCEPT 
+equity nextdividenddate GTHAN TODAY+7 DATE ACCEPT
+bond issuer EQUALS US-GOV TEXT ACCEPT
+equity issuer EQUALS MUNICIPAL	TEXT ACCEPT
