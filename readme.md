@@ -56,6 +56,8 @@ TODAY+(number of days) or TODAY-(number of days)
 ### Assumptions:
  - All numericals are in single currency.
  - Given rules are only accepted rules (See example to convert it to accepted rules)
+ - DATE in rule is always future date
+ 
 
 ### Execution Steps:
  - Create a security data instance either bond or equity. add parameter and its value 
