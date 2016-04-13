@@ -15,18 +15,7 @@ public interface RuleOperator {
 		LEQUAL,
 		GEQUAL
 	}
-	
-	public enum valuetype{
-		NUMERIC,
-		TEXT,
-		DATE,
-		NONE
-	}
-	
-	public enum result{
-		ACCEPT,
-		REJECT
-	}
-	
+	public enum valuetype{NUMERIC, TEXT, DATE, NONE}
+	public enum result{ ACCEPT, REJECT}
 	public void parseRule();
 }

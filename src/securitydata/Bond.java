@@ -1,12 +1,14 @@
 package securitydata;
 import java.util.HashMap;
 
+/**
+ * Bond class which store bond attributes 
+ * @author Sricharan
+ */
 public class Bond extends Security {
 	
-	//Bond parameters
 	private HashMap<String, Object> parameters;
 	
-
 	public Bond() {
 		this.instrument = "bond"; 
 		parameters = new HashMap<String, Object>();
@@ -24,7 +26,6 @@ public class Bond extends Security {
 	public Object getParameter(String parameter){
 		if(parameters.containsKey(parameter))
 			return parameters.get(parameter);
-
 		return null;
 	}
 }

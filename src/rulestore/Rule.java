@@ -16,18 +16,13 @@ public class Rule implements RuleOperator{
 	public String name;
 	public String line;
 	public String expr;
-	//public String val = null;
 	public String val = null;
 	public String valtype;
 	public boolean res;
 	
-//	public LocalDate eventDate = null;
 	public LocalDate eventDate;
-	//public float value = -1.1f;
 	public float value;
-	
 	public boolean isvalid;
-	
 	public valuetype type;
 	
 	
@@ -103,7 +98,7 @@ public class Rule implements RuleOperator{
 					eventDate = new LocalDate();
 					eventDate = eventDate.plusDays(numb);
 				} catch(NumberFormatException ex){
-					System.out.println("Error: interger part in date is not in correct format\n eg: TODAY+10");
+					System.out.println("Error: integer part in date is not in correct format\n eg: TODAY+10");
 					isvalid = false;
 				}
 			} else{
