@@ -64,10 +64,16 @@ TODAY+(number of days) or TODAY-(number of days)
  - Create a RuleStore instance, add rule with rule name
  - Create a Rule Engine instance and pass rulestore and security data instances
  - Finally run engine to get output(either accepted or rejected)
+ 
+### Run from Jetty Server
+ - Run main method in Driver.java
+ - open a browser localhost:8080
+ - follow the instructions
 
 ### Required libraries:
  -  JUnit4
  -  Apache Joda Time (http://www.joda.org/joda-time/)
+  -  Jetty (http://download.eclipse.org/jetty/)
 
 #### Future work:
  - RulesStore can be extended to recieve rules from multiple streams like flat files, xml and through http post etc
