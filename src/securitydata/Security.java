@@ -14,5 +14,6 @@ public abstract class Security {
 	}
 	
 	public abstract Object getParameter(String parameter);
+	public abstract void addParameter(String parameter, Object value);
 }
 
