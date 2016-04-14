@@ -73,7 +73,8 @@ TODAY+(number of days) or TODAY-(number of days)
 ### Required libraries:
  -  JUnit4
  -  Apache Joda Time (http://www.joda.org/joda-time/)
-  -  Jetty (http://download.eclipse.org/jetty/)
+ -  Jetty (http://download.eclipse.org/jetty/)
+ -  Javax Servlet 
 
 #### Future work:
  - RulesStore can be extended to recieve rules from multiple streams like flat files, xml and through http post etc

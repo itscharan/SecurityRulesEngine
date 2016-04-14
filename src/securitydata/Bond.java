@@ -22,7 +22,6 @@ public class Bond extends Security {
 		parameters.put(parameter, value);
 	}
 	
-	@Override
 	public Object getParameter(String parameter){
 		if(parameters.containsKey(parameter))
 			return parameters.get(parameter);

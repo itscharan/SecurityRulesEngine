@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class RuleStore {
 	
-	public List<Rule> rules;
+	private List<Rule> rules;
 	
 	public RuleStore(){
 		rules = new ArrayList<Rule>();
