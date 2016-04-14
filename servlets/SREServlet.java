@@ -32,7 +32,7 @@ public class SREServlet extends BaseServlet{
 		result = false;
 	}
 	
-	protected void doGet(HttpServletRequest request,
+	protected synchronized void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		
 		response.setContentType("text/html");
@@ -64,7 +64,7 @@ public class SREServlet extends BaseServlet{
 		
 	}
 	
-	protected void doPost(HttpServletRequest request,
+	protected synchronized void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		
 		rule1 = request.getParameter("rule1");
@@ -136,7 +136,7 @@ public class SREServlet extends BaseServlet{
 		out.printf("\t<td>%n");
 		
 		out.printf("\t\t<p>Security data</p><p>Instrument  <input type=\"text\" name=\"instrument\" maxlength=\"50\" size=\"25\">%n");
-		out.printf("\t\t<p><p>Attriute  <input type=\"text\" name=\"attribute\" maxlength=\"50\" size=\"25\">%n");
+		out.printf("\t\t<p><p>Attribute  <input type=\"text\" name=\"attribute\" maxlength=\"50\" size=\"25\">%n");
 		out.printf("\t\t<p><p>Value  <input type=\"text\" name=\"value\" maxlength=\"50\" size=\"25\">%n");
 		out.printf("\t</td>%n");
 		out.printf("</tr>%n");
