@@ -32,7 +32,7 @@ public class SREServlet extends BaseServlet{
 		result = false;
 	}
 	
-	protected synchronized void doGet(HttpServletRequest request,
+	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		
 		response.setContentType("text/html");
@@ -64,7 +64,7 @@ public class SREServlet extends BaseServlet{
 		
 	}
 	
-	protected synchronized void doPost(HttpServletRequest request,
+	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		
 		rule1 = request.getParameter("rule1");
